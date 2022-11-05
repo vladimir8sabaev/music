@@ -1,0 +1,41 @@
+.music {
+  min-height: 5vh;
+  max-height: 5vh;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  &__buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  &__button {
+    width: 120px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    &-synthwave {
+      background-color: #9113e6;
+      color: white;
+    }
+    &-classic {
+      background-color: #e5ecbb;
+      color: black;
+    }
+    &-phonk {
+      background-color: #15ff00;
+      color: black;
+    }
+    &-chillhop {
+      background-color: #0084ffc0;
+      color: white;
+    }
+    &-gameOST {
+      background-color: white;
+      color: black;
+    }
+  }
+}

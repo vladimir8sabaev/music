@@ -1,0 +1,50 @@
+.promo {
+  min-height: 95vh;
+  max-height: 95vh;
+  padding: 0 0 150px 0;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/bg/Synthwave-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__header {
+    padding-top: 100px;
+    font-weight: 400;
+    font-size: 12vw;
+    line-height: 12.5vw;
+    color: #ffffff;
+    &-genre {
+      font-size: 12vw;
+      line-height: 12.5vw;
+      color: rgba($color: #9113e6, $alpha: 1);
+    }
+  }
+  .question {
+    animation: blink1 2s linear infinite;
+    color: rgba($color: #9113e6, $alpha: 1);
+  }
+  @keyframes blink1 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  &__clock {
+    padding: top 10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5vh;
+    font-weight: 400;
+    color: #9113e6;
+  }
+}

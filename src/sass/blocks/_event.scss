@@ -1,0 +1,36 @@
+.event{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(../img/event-bg.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0 30px 0;
+    hr{
+        color: black;
+        height: 0.5vw;
+        width: 20vw;
+        opacity: 1;
+        margin: 0 0;
+        margin-bottom: 30px;
+    }
+}
+.title-dark{
+    font-weight: 500;
+    font-size: 5vw; 
+    color: black;
+    margin: 0 0;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 14px;
+    span{
+        color: red;
+        &:hover{
+            color: black;
+        }
+    }
+}
+.carousel{
+    -moz-border-radius: 20px; /* FF1+ */
+    -webkit-border-radius: 20px; /* Saf3-4, iOS 1+, Android 1.5+ */
+    border-radius: 20px; /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
+    overflow:hidden;
+}

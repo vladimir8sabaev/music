@@ -1,0 +1,18 @@
+@import "base/_animations.scss";
+@import "base/animations.scss";
+@import "blocks/_promo.scss";
+@import "blocks/_event.scss";
+@import "blocks/_music.scss";
+@import "blocks/_contacts.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_modal.scss";
+//!LAST IMPORT
+@import "_media.scss";
+* {
+  font-family: "Roboto", sans-serif;
+  font-display: swap;
+}
+html,
+body {
+  scroll-behavior: smooth !important;
+}

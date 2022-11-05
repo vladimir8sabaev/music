@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Music</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet" />
+	<link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" href="http://ulprodlenka.ru/favicon.ico" />
+	<!-- !last stylesheet -->
+	<link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+	<section class="promo" id="promo">
+		<div class="container">
+			<div class="promo__clock"></div>
+			<div class="promo__header">
+				Ты <br />
+				любишь <span class="promo__header-genre">Synthwave</span><span class="question">?</span>
+			</div>
+		</div>
+	</section>
+	<section class="music" id="music">
+		<div class="music__buttons">
+			<button class="music__button music__button-synthwave">
+				Synthwave
+			</button>
+			<button class="music__button music__button-classic">
+				Classic
+			</button>
+			<button class="music__button music__button-phonk">
+				Phonk
+			</button>
+			<button class="music__button music__button-chillhop">
+				Chillhop
+			</button>
+			<button class="music__button music__button-gameOST">
+				GameOST
+			</button>
+		</div>
+	</section>
+	<section class="event" id="event">
+		<div class="container"></div>
+	</section>
+	<section class="contacts" id="contacts">
+		<div class="container"></div>
+	</section>
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="footer__left col-6 col-sm-5 offset-sm-1">
+					<div class="footer__adress col-12">
+						<div class="footer__adress-header">Наш адрес:</div>
+						<div class="footer__adress-descr">
+							ул. Фруктовая 4, <br />
+							Дальнее Засвияжье, <br />Ульяновск
+						</div>
+					</div>
+				</div>
+				<div class="footer__right col-6 col-sm-5 offset-sm-1">
+					<div class="footer__about col-12">
+						<div class="footer__about-header">О нас:</div>
+						<div class="footer__about-descr">
+							Телефон: <a href="tel:+79372732060">+7 (937) 273-20-60</a>
+							<br />
+							<a href="https://vk.com/ulprodlenka" target="_blank" class="footer__about-icon"><img
+									src="icons/vk.svg" alt="vk" /></a>
+							<a href="https://vk.com/ulprodlenka" target="_blank">vk.com/ulprodlenka</a>
+							<br /><a href="#" class="footer__about-icon"><img src="icons/website.svg"
+									alt="website" /></a>
+							<a href="#">ulprodlenka.ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="overlay">
+		<div class="modal fade modal-contact" id="exampleModalCenter" tabindex="-1" role="dialog"
+			aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<form action="https://formsubmit.co/vladimir8sabaev@gmail.com" method="POST"
+							id="contacts-form-modal" class="contacts-form">
+							<div class="contacts-form__close">&times;</div>
+							<div class="contacts-form__header">Просто заполните форму</div>
+							<div class="contacts-form__label">Имя *</div>
+							<div class="input-group mb-2">
+								<label for="name">
+									<input required name="name" type="text" class="form-control"
+										placeholder="Ваше имя" />
+								</label>
+							</div>
+							<div class="contacts-form__label">Телефон *</div>
+							<div class="input-group mb-2">
+								<label for="phone">
+									<input name="phone" required placeholder="Ваш телефон" type="tel"
+										class="form-control" />
+								</label>
+							</div>
+							<div class="contacts-form__label">Электронная почта *</div>
+							<div class="input-group mb-2">
+								<label for="email">
+									<input name="email" required placeholder="Ваш E-mail" type="email"
+										class="form-control" />
+								</label>
+							</div>
+							<button class="mt-4 btn btn-outline-light" type="submit">
+								Отправить
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade modal-thanks" id="exampleModalCenterThanks" tabindex="-1" role="dialog"
+			aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="modal-body-close">&times;</div>
+						<div class="modal-body-text">
+							Спасибо! <br />
+							Мы обязательно с Вами свяжемся
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+	<script src="js/wow.min.js"></script>
+	<!-- !last script -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
