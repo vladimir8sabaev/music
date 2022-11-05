@@ -25,12 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
     "FilmOST",
   ];
   const genreSpan = document.querySelector(".promo__header-genre");
-  const btnSynthwave = document.querySelector(".music__button-synthwave");
-  const btnClassic = document.querySelector(".music__button-classic");
-  const btnPhonk = document.querySelector(".music__button-phonk");
-  const btnChillhop = document.querySelector(".music__button-chillhop");
-  const btnGameOST = document.querySelector(".music__button-gameOST");
-  const btnFilmOST = document.querySelector(".music__button-filmOST");
+  const btnSynthwave = document.querySelector(".promo__button-synthwave");
+  const btnClassic = document.querySelector(".promo__button-classic");
+  const btnPhonk = document.querySelector(".promo__button-phonk");
+  const btnChillhop = document.querySelector(".promo__button-chillhop");
+  const btnGameOST = document.querySelector(".promo__button-gameOST");
+  const btnFilmOST = document.querySelector(".promo__button-filmOST");
   const promo = document.querySelector(".promo");
   function changeGenre(btnName, genreName, color) {
     btnName.addEventListener("click", () => {

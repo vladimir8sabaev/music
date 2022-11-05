@@ -1,6 +1,7 @@
 .promo {
-  min-height: 95vh;
-  max-height: 95vh;
+  position: relative;
+  min-height: 100vh;
+  max-height: 100vh;
   padding: 0 0 150px 0;
   background-image: linear-gradient(
       to top,
@@ -46,5 +47,48 @@
     font-size: 5vh;
     font-weight: 400;
     color: #9113e6;
+  }
+  &__buttons {
+    background-color: rgba($color: black, $alpha: 0.5);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0px;
+    padding: 5px 0 5px 0;
+  }
+  &__button {
+    margin: 10px 0 10px 0;
+    width: 120px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    &-synthwave {
+      background-color: #9113e6;
+      color: white;
+    }
+    &-classic {
+      background-color: #e5ecbb;
+      color: black;
+    }
+    &-phonk {
+      background-color: #15ff00;
+      color: black;
+    }
+    &-chillhop {
+      background-color: #0084ffc0;
+      color: white;
+    }
+    &-gameOST {
+      background-color: white;
+      color: black;
+    }
+    &-filmOST {
+      background-color: yellow;
+      color: black;
+    }
   }
 }
