@@ -16,13 +16,21 @@ document.addEventListener("DOMContentLoaded", () => {
   showTime();
   const question = document.querySelector(".question");
   let clock = document.querySelector(".promo__clock");
-  let genres = ["Synthwave", "Classic", "Phonk", "Chillhop", "GameOST"];
+  let genres = [
+    "Synthwave",
+    "Classic",
+    "Phonk",
+    "Chillhop",
+    "GameOST",
+    "FilmOST",
+  ];
   const genreSpan = document.querySelector(".promo__header-genre");
   const btnSynthwave = document.querySelector(".music__button-synthwave");
   const btnClassic = document.querySelector(".music__button-classic");
   const btnPhonk = document.querySelector(".music__button-phonk");
   const btnChillhop = document.querySelector(".music__button-chillhop");
   const btnGameOST = document.querySelector(".music__button-gameOST");
+  const btnFilmOST = document.querySelector(".music__button-filmOST");
   const promo = document.querySelector(".promo");
   function changeGenre(btnName, genreName, color) {
     btnName.addEventListener("click", () => {
@@ -42,4 +50,5 @@ document.addEventListener("DOMContentLoaded", () => {
   changeGenre(btnPhonk, genres[2], "#15ff00");
   changeGenre(btnChillhop, genres[3], "#0084ffc0");
   changeGenre(btnGameOST, genres[4], "white");
+  changeGenre(btnFilmOST, genres[5], "yellow");
 });
