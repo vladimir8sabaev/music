@@ -65,30 +65,36 @@
     border-radius: 20px;
     font-size: 20px;
     font-weight: 500;
-    border: none;
+    border: 2px solid black;
     &-synthwave {
       background-color: #cb0fff;
       color: white;
+      border-color: #cb0fff;
     }
     &-classic {
-      background-color: #e5ecbb;
-      color: black;
+      background-color: transparent;
+      color: white;
+      border-color: #e5ecbb;
     }
     &-phonk {
-      background-color: #15ff00;
-      color: black;
+      background-color: transparent;
+      color: white;
+      border-color: #15ff00;
     }
     &-chillhop {
-      background-color: #0084ffc0;
+      background-color: transparent;
       color: white;
+      border-color: #0084ff;
     }
     &-gameOST {
-      background-color: white;
-      color: black;
+      background-color: transparent;
+      color: white;
+      border-color: white;
     }
     &-filmOST {
-      background-color: yellow;
-      color: black;
+      background-color: transparent;
+      color: white;
+      border-color: yellow;
     }
   }
 }

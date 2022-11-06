@@ -32,7 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnGameOST = document.querySelector(".promo__button-gameOST");
   const btnFilmOST = document.querySelector(".promo__button-filmOST");
   const promo = document.querySelector(".promo");
-  function changeGenre(btnName, genreName, color) {
+  const btns = document.querySelectorAll(".promo__button");
+  function allBtnTransparent() {
+    btns.forEach(function (e) {
+      e.style.backgroundColor = "transparent";
+      e.style.color = "white";
+    });
+  }
+  function changeGenre(btnName, genreName, color, textColor) {
     btnName.addEventListener("click", () => {
       promo.style.backgroundImage = `linear-gradient(
         to top,
@@ -43,12 +50,15 @@ document.addEventListener("DOMContentLoaded", () => {
       genreSpan.style.color = color;
       question.style.color = color;
       clock.style.color = color;
+      allBtnTransparent();
+      btnName.style.backgroundColor = color;
+      btnName.style.color = textColor;
     });
   }
-  changeGenre(btnSynthwave, genres[0], "#cb0fff");
-  changeGenre(btnClassic, genres[1], "#e5ecbb");
-  changeGenre(btnPhonk, genres[2], "#15ff00");
-  changeGenre(btnChillhop, genres[3], "#0084ffc0");
-  changeGenre(btnGameOST, genres[4], "white");
-  changeGenre(btnFilmOST, genres[5], "yellow");
+  changeGenre(btnSynthwave, genres[0], "#cb0fff", "white");
+  changeGenre(btnClassic, genres[1], "#e5ecbb", "black");
+  changeGenre(btnPhonk, genres[2], "#15ff00", "black");
+  changeGenre(btnChillhop, genres[3], "#0084ff", "white");
+  changeGenre(btnGameOST, genres[4], "white", "black");
+  changeGenre(btnFilmOST, genres[5], "yellow", "black");
 });
