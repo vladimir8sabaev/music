@@ -21,12 +21,12 @@
     &-genre {
       font-size: 12vw;
       line-height: 12.5vw;
-      color: rgba($color: #9113e6, $alpha: 1);
+      color: rgba($color: #cb0fff, $alpha: 1);
     }
   }
   .question {
     animation: blink1 2s linear infinite;
-    color: rgba($color: #9113e6, $alpha: 1);
+    color: rgba($color: #cb0fff, $alpha: 1);
   }
   @keyframes blink1 {
     0% {
@@ -57,7 +57,7 @@
     justify-content: space-evenly;
     position: absolute;
     bottom: 0px;
-    padding: 5px 0 5px 0;
+    padding: 5px 250px 5px 250px;
   }
   &__button {
     margin: 10px 0 10px 0;
@@ -67,7 +67,7 @@
     font-weight: 500;
     border: none;
     &-synthwave {
-      background-color: #9113e6;
+      background-color: #cb0fff;
       color: white;
     }
     &-classic {

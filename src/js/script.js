@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       clock.style.color = color;
     });
   }
-  changeGenre(btnSynthwave, genres[0], "#9113e6");
+  changeGenre(btnSynthwave, genres[0], "#cb0fff");
   changeGenre(btnClassic, genres[1], "#e5ecbb");
   changeGenre(btnPhonk, genres[2], "#15ff00");
   changeGenre(btnChillhop, genres[3], "#0084ffc0");
