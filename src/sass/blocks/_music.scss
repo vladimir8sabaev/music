@@ -9,4 +9,59 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__card {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/bg/Chillhop-bg.jpg);
+    background-size: cover;
+    padding: 200px 0 0;
+    width: 300px;
+    height: 400px;
+    &-content {
+      padding: 0 20px 40px 20px;
+      background: linear-gradient(
+        (hsl(0 0% 0% /0)),
+        hsl(20 0% 0% /0.3) 20%,
+        hsl(0 0% 0% /1)
+      );
+    }
+
+    &-title {
+      position: relative;
+      outline: 1px solid red;
+      width: max-content;
+      &:after {
+        content: "";
+        position: absolute;
+        width: calc(100% + 20px);
+        height: 4px;
+        left: -20px;
+        bottom: 0;
+        background: #cb0fff;
+      }
+    }
+    &-body {
+      margin-top: 15px;
+    }
+    &-button {
+      background-color: #cb0fff;
+      color: white;
+      border-radius: 5px;
+      &:hover {
+        background-color: aliceblue;
+        color: black;
+      }
+    }
+  }
 }
