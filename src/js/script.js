@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "Chillhop",
     "GameOST",
     "FilmOST",
+    "Trap",
   ];
   const genreSpan = document.querySelector(".promo__header-genre");
   const btnSynthwave = document.querySelector(".promo__button-synthwave");
@@ -31,8 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnChillhop = document.querySelector(".promo__button-chillhop");
   const btnGameOST = document.querySelector(".promo__button-gameOST");
   const btnFilmOST = document.querySelector(".promo__button-filmOST");
+  const btnTrap = document.querySelector(".promo__button-trap");
   const promo = document.querySelector(".promo");
   const btns = document.querySelectorAll(".promo__button");
+  const btnsContainer = document.querySelector(".promo__buttons");
+  const arrow = document.querySelector(".promo__arrow");
+  const musicSection = document.querySelector(".music");
   function allBtnTransparent() {
     btns.forEach(function (e) {
       e.style.backgroundColor = "transparent";
@@ -53,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
       allBtnTransparent();
       btnName.style.backgroundColor = color;
       btnName.style.color = textColor;
+      arrow.style.borderColor = color;
     });
   }
   changeGenre(btnSynthwave, genres[0], "#cb0fff", "white");
@@ -61,4 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
   changeGenre(btnChillhop, genres[3], "#0084ff", "white");
   changeGenre(btnGameOST, genres[4], "white", "black");
   changeGenre(btnFilmOST, genres[5], "yellow", "black");
+  changeGenre(btnTrap, genres[6], "red", "white");
+  arrow.addEventListener("click", () => {
+    btnsContainer.scrollIntoView();
+  });
 });
