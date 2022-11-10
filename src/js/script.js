@@ -37,9 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const btns = document.querySelectorAll(".promo__button");
   const btnsContainer = document.querySelector(".promo__buttons");
   const arrow = document.querySelector(".promo__arrow");
-  const cardTitle = document.querySelector(".music__card-title");
-  const cardTitleAfter = window.getComputedStyle(cardTitle, "::after");
-  const cardBtn = document.querySelector(".music__card-button");
+  const cardTitles = document.querySelectorAll(".music__card-title");
+  //const cardTitleAfters = window.getComputedStyle(cardTitles, "::after");
+  const cardBtns = document.querySelectorAll(".music__card-button");
+  function changeCardColor(color) {
+    const root = document.querySelector(":root");
+    root.style.setProperty("--Color", color);
+  }
   function allBtnTransparent() {
     btns.forEach(function (e) {
       e.style.backgroundColor = "transparent";
@@ -61,9 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btnName.style.backgroundColor = color;
       btnName.style.color = textColor;
       arrow.style.borderColor = color;
-      console.log(cardTitleAfter);
-      cardTitle.style.setProperty("--Color", color);
-      cardBtn.style.borderColor = color;
+      changeCardColor(color);
     });
   }
   changeGenre(btnSynthwave, genres[0], "#cb0fff", "white");
