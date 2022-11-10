@@ -1,3 +1,6 @@
+:root {
+  --Color: #cb0fff;
+}
 .music {
   min-height: 95vh;
   background-image: linear-gradient(
@@ -28,6 +31,7 @@
     padding: 200px 0 0;
     width: 300px;
     height: 400px;
+    transition: transform 300ms ease;
     &-content {
       padding: 0 20px 40px 20px;
       background: linear-gradient(
@@ -36,10 +40,8 @@
         hsl(0 0% 0% /1)
       );
     }
-
     &-title {
       position: relative;
-      outline: 1px solid red;
       width: max-content;
       &:after {
         content: "";
@@ -47,20 +49,93 @@
         width: calc(100% + 20px);
         height: 4px;
         left: -20px;
-        bottom: 0;
-        background: #cb0fff;
+        bottom: -3px;
+        background: var(--Color);
+        //transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 500ms ease;
       }
     }
     &-body {
       margin-top: 15px;
     }
     &-button {
-      background-color: #cb0fff;
-      color: white;
-      border-radius: 5px;
-      &:hover {
-        background-color: aliceblue;
-        color: black;
+      width: 120px;
+      border-radius: 20px;
+      font-size: 15px;
+      font-weight: 500;
+      border: 2px solid black;
+      &-synthwave {
+        background-color: transparent;
+        color: white;
+        border-color: var(--Color);
+      }
+      &-classic {
+        background-color: transparent;
+        color: white;
+        border-color: #e5ecbb;
+      }
+      &-phonk {
+        background-color: transparent;
+        color: white;
+        border-color: #15ff00;
+      }
+      &-chillhop {
+        background-color: transparent;
+        color: white;
+        border-color: #0084ff;
+      }
+      &-gameOST {
+        background-color: transparent;
+        color: white;
+        border-color: white;
+      }
+      &-filmOST {
+        background-color: transparent;
+        color: white;
+        border-color: yellow;
+      }
+      &-trap {
+        background-color: transparent;
+        color: white;
+        border-color: red;
+      }
+    }
+  }
+}
+@media (hover) {
+  .music {
+    &__card {
+      &-content {
+        transform: translateY(70%);
+        transition: transform 500ms ease;
+      }
+      &-content > *:not(.music__card-title) {
+        opacity: 0;
+        transition: opacity 500ms linear;
+      }
+      &-title {
+        &:after {
+          transform: scaleX(0);
+        }
+      }
+      &:focus-within .music__card-content {
+        transition-duration: 0ms;
+      }
+      &:hover,
+      &:focus-within {
+        transform: scale(1.01);
+        .music__card-title::after {
+          transform: scaleX(1);
+        }
+        .music__card-content {
+          transform: translateY(0);
+          transition-delay: 300ms;
+        }
+        .music__card-content > * {
+          opacity: 1;
+          transition-delay: 300ms;
+        }
       }
     }
   }

@@ -37,7 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const btns = document.querySelectorAll(".promo__button");
   const btnsContainer = document.querySelector(".promo__buttons");
   const arrow = document.querySelector(".promo__arrow");
-  const musicSection = document.querySelector(".music");
+  const cardTitle = document.querySelector(".music__card-title");
+  const cardTitleAfter = window.getComputedStyle(cardTitle, "::after");
+  const cardBtn = document.querySelector(".music__card-button");
   function allBtnTransparent() {
     btns.forEach(function (e) {
       e.style.backgroundColor = "transparent";
@@ -59,6 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
       btnName.style.backgroundColor = color;
       btnName.style.color = textColor;
       arrow.style.borderColor = color;
+      console.log(cardTitleAfter);
+      cardTitle.style.setProperty("--Color", color);
+      cardBtn.style.borderColor = color;
     });
   }
   changeGenre(btnSynthwave, genres[0], "#cb0fff", "white");
