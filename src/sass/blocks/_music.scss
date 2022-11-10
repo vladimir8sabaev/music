@@ -13,11 +13,14 @@
   background-size: cover;
   background-position: center center;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  &__cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
   &__card {
-    display: block;
-    margin: 0 auto;
+    display: flex;
     color: white;
     border-radius: 10px;
     overflow: hidden;
