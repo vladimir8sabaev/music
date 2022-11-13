@@ -37,9 +37,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const btns = document.querySelectorAll(".promo__button");
   const btnsContainer = document.querySelector(".promo__buttons");
   const arrow = document.querySelector(".promo__arrow");
-  const cardTitles = document.querySelectorAll(".music__card-title");
-  //const cardTitleAfters = window.getComputedStyle(cardTitles, "::after");
-  const cardBtns = document.querySelectorAll(".music__card-button");
+  const cards = document.querySelectorAll(".music__card");
+  const modalBtns = document.querySelectorAll(".music__card-button");
+  const modal = document.querySelector(".music__modal-bg");
+  modalBtns.forEach((e) => {
+    console.log(e.dataset.link);
+    e.addEventListener("click", () => {
+      modal.style.display = "flex";
+      modal.innerHTML = `
+          <iframe src=${e.dataset.link} title="Illusions - A Chillwave Mix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+      `;
+      setTimeout(() => {
+        modal.style.opacity = "1";
+      }, 50);
+    });
+  });
+  modal.addEventListener("click", () => {
+    modal.innerHTML = "";
+    modal.style.opacity = "0";
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 450);
+  });
   function changeCardColor(color) {
     const root = document.querySelector(":root");
     root.style.setProperty("--Color", color);
@@ -48,6 +67,18 @@ document.addEventListener("DOMContentLoaded", () => {
     btns.forEach(function (e) {
       e.style.backgroundColor = "transparent";
       e.style.color = "white";
+    });
+  }
+  function hideCards() {
+    cards.forEach((e) => {
+      e.classList.remove("show");
+      e.classList.add("hide");
+    });
+  }
+  function showCards(className) {
+    document.querySelectorAll(`.music__card-${className}`).forEach((e) => {
+      e.classList.remove("hide");
+      e.classList.add("show");
     });
   }
   function changeGenre(btnName, genreName, color, textColor) {
@@ -66,6 +97,8 @@ document.addEventListener("DOMContentLoaded", () => {
       btnName.style.color = textColor;
       arrow.style.borderColor = color;
       changeCardColor(color);
+      hideCards();
+      showCards(genreName.toLowerCase());
     });
   }
   changeGenre(btnSynthwave, genres[0], "#cb0fff", "white");
