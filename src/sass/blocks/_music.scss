@@ -20,22 +20,24 @@
     flex-wrap: wrap;
   }
   &__card {
-    display: flex;
+    display: block;
     color: white;
     border-radius: 10px;
-    overflow: hidden;
-    background-image: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),
-      url(../img/bg/Chillhop-bg.jpg);
     background-size: cover;
     padding: 200px 0 0;
     width: 300px;
     height: 400px;
     transition: transform 300ms ease;
+    // background-image:linear-gradient(
+    //     to top,
+    //     rgba(0, 0, 0, 0.4),
+    //     rgba(0, 0, 0, 0.4)
+    //   ),url(../img/cards/chillhop1.jpg);
+    overflow: hidden !important;
     &-content {
+      position: relative;
+      height: 200px;
+      width: 300px;
       padding: 0 20px 40px 20px;
       background: linear-gradient(
         (hsl(0 0% 0% /0)),
@@ -63,46 +65,17 @@
       margin-top: 15px;
     }
     &-button {
+      position: absolute;
+      bottom: 30px;
+      left: 20px;
       width: 120px;
       border-radius: 20px;
       font-size: 15px;
       font-weight: 500;
       border: 2px solid black;
-      &-synthwave {
-        background-color: transparent;
-        color: white;
-        border-color: var(--Color);
-      }
-      &-classic {
-        background-color: transparent;
-        color: white;
-        border-color: #e5ecbb;
-      }
-      &-phonk {
-        background-color: transparent;
-        color: white;
-        border-color: #15ff00;
-      }
-      &-chillhop {
-        background-color: transparent;
-        color: white;
-        border-color: #0084ff;
-      }
-      &-gameOST {
-        background-color: transparent;
-        color: white;
-        border-color: white;
-      }
-      &-filmOST {
-        background-color: transparent;
-        color: white;
-        border-color: yellow;
-      }
-      &-trap {
-        background-color: transparent;
-        color: white;
-        border-color: red;
-      }
+      background-color: transparent;
+      color: white;
+      border-color: var(--Color);
     }
   }
   &__modal-bg {

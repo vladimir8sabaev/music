@@ -111,4 +111,43 @@ document.addEventListener("DOMContentLoaded", () => {
   arrow.addEventListener("click", () => {
     btnsContainer.scrollIntoView();
   });
+  class musicItem {
+    constructor(src, title, descr, link, className) {
+      this.src = src;
+      this.title = title;
+      this.descr = descr;
+      this.link = link;
+      this.parent = document.querySelector(".music__cards");
+      this.className = className;
+    }
+    render() {
+      const element = document.createElement("div");
+      element.innerHTML = `
+      <div class="music__card ${this.className}">
+        <div class="music__card-content">
+          <h2 class="music__card-title">${this.title}</h2>
+          <p class="music__card-body">
+          ${this.descr}
+          </p>
+          <button data-link=${this.link}
+            class="music__card-button">Youtube</button>
+        </div>
+      </div>
+        `;
+      element.style.backgroundImage = `linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),url(${this.src})`;
+      element.style.borderRadius = "10px";
+      this.parent.append(element);
+    }
+  }
+  new musicItem(
+    "../img/bg/Chillhop-bg.jpg",
+    "ChillHop Raccoon",
+    "My favourite chillhop ever",
+    "https://www.youtube.com/embed/7NOSDKb0HlU",
+    "music__card-chillhop"
+  ).render();
 });
