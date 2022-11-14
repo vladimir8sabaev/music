@@ -37,20 +37,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const btns = document.querySelectorAll(".promo__button");
   const btnsContainer = document.querySelector(".promo__buttons");
   const arrow = document.querySelector(".promo__arrow");
-  const cards = document.querySelectorAll(".music__card");
   const modalBtns = document.querySelectorAll(".music__card-button");
   const modal = document.querySelector(".music__modal-bg");
-  modalBtns.forEach((e) => {
-    console.log(e.dataset.link);
-    e.addEventListener("click", () => {
+  const tabs = document.querySelectorAll(".music__tab");
+  const wrapper = document.querySelector(".music__tabs");
+  wrapper.addEventListener("click", (event) => {
+    console.log(event.target.dataset.link);
+    if (event.target.className == "music__card-button") {
       modal.style.display = "flex";
       modal.innerHTML = `
-          <iframe src=${e.dataset.link} title="Illusions - A Chillwave Mix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+          <iframe src=${event.target.dataset.link} title="Illusions - A Chillwave Mix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
       `;
       setTimeout(() => {
         modal.style.opacity = "1";
       }, 50);
-    });
+    }
   });
   modal.addEventListener("click", () => {
     modal.innerHTML = "";
@@ -69,18 +70,20 @@ document.addEventListener("DOMContentLoaded", () => {
       e.style.color = "white";
     });
   }
-  function hideCards() {
-    cards.forEach((e) => {
+  function hideTabs() {
+    tabs.forEach((e) => {
       e.classList.remove("show");
       e.classList.add("hide");
     });
   }
-  function showCards(className) {
-    document.querySelectorAll(`.music__card-${className}`).forEach((e) => {
+  function showTab(className) {
+    document.querySelectorAll(`.music__tab-${className}`).forEach((e) => {
       e.classList.remove("hide");
       e.classList.add("show");
     });
   }
+  hideTabs();
+  showTab("synthwave");
   function changeGenre(btnName, genreName, color, textColor) {
     btnName.addEventListener("click", () => {
       promo.style.backgroundImage = `linear-gradient(
@@ -97,8 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
       btnName.style.color = textColor;
       arrow.style.borderColor = color;
       changeCardColor(color);
-      hideCards();
-      showCards(genreName.toLowerCase());
+      hideTabs();
+      showTab(genreName.toLowerCase());
     });
   }
   changeGenre(btnSynthwave, genres[0], "#cb0fff", "white");
@@ -112,12 +115,12 @@ document.addEventListener("DOMContentLoaded", () => {
     btnsContainer.scrollIntoView();
   });
   class musicItem {
-    constructor(src, title, descr, link, className) {
+    constructor(src, title, descr, link, parentSelector, className) {
       this.src = src;
       this.title = title;
       this.descr = descr;
       this.link = link;
-      this.parent = document.querySelector(".music__cards");
+      this.parent = document.querySelector(parentSelector);
       this.className = className;
     }
     render() {
@@ -148,6 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "ChillHop Raccoon",
     "My favourite chillhop ever",
     "https://www.youtube.com/embed/7NOSDKb0HlU",
+    ".music__tab-chillhop",
     "music__card-chillhop"
   ).render();
 });
