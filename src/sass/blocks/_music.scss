@@ -14,10 +14,13 @@
   background-position: center center;
   display: flex;
   &__tab {
+    margin: 0 auto;
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    max-width: 80%;
+    row-gap: 35px;
   }
   &__card {
     display: block;
@@ -25,14 +28,9 @@
     border-radius: 10px;
     background-size: cover;
     padding: 200px 0 0;
-    width: 300px;
-    height: 400px;
+    max-width: 300px;
+    max-height: 400px;
     transition: transform 300ms ease;
-    // background-image:linear-gradient(
-    //     to top,
-    //     rgba(0, 0, 0, 0.4),
-    //     rgba(0, 0, 0, 0.4)
-    //   ),url(../img/cards/chillhop1.jpg);
     overflow: hidden !important;
     &-content {
       position: relative;

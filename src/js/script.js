@@ -139,8 +139,8 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
       element.style.backgroundImage = `linear-gradient(
         to top,
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
       ),url(${this.src})`;
       element.style.borderRadius = "10px";
       this.parent.append(element);
@@ -153,5 +153,54 @@ document.addEventListener("DOMContentLoaded", () => {
     "https://www.youtube.com/embed/7NOSDKb0HlU",
     ".music__tab-chillhop",
     "music__card-chillhop"
+  ).render();
+  //! synthwave
+  new musicItem(
+    "../img/cards/synthwave1.jpg",
+    "Gravity",
+    "Synthwave1",
+    "https://www.youtube.com/embed/D8gHFd1Slfo",
+    ".music__tab-synthwave",
+    "music__card-synthwave"
+  ).render();
+  new musicItem(
+    "../img/cards/synthwave2.jpg",
+    "Cybercity",
+    "Synthwave2",
+    "https://www.youtube.com/embed/dgCnYsDTiXU",
+    ".music__tab-synthwave",
+    "music__card-synthwave"
+  ).render();
+  new musicItem(
+    "../img/cards/synthwave3.jpg",
+    "Nightlapse",
+    "Synthwave3",
+    "https://www.youtube.com/embed/6TEGPexTqr4",
+    ".music__tab-synthwave",
+    "music__card-synthwave"
+  ).render();
+  new musicItem(
+    "../img/cards/synthwave4.jpg",
+    "Glitch",
+    "Synthwave4",
+    "https://www.youtube.com/embed/isIj3tuQTDY",
+    ".music__tab-synthwave",
+    "music__card-synthwave"
+  ).render();
+  new musicItem(
+    "../img/cards/synthwave5.jpg",
+    "Gravity 2.0",
+    "Synthwave5",
+    "https://www.youtube.com/embed/CQwDEznMRMk",
+    ".music__tab-synthwave",
+    "music__card-synthwave"
+  ).render();
+  new musicItem(
+    "../img/cards/synthwave6.jpg",
+    "Offworld",
+    "Synthwave6",
+    "https://www.youtube.com/embed/7FG7nTUYowQ",
+    ".music__tab-synthwave",
+    "music__card-synthwave"
   ).render();
 });
