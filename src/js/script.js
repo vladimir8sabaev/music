@@ -334,4 +334,29 @@ document.addEventListener("DOMContentLoaded", () => {
     ".music__tab-phonk",
     "music__card-phonk"
   ).render();
+  //! filmost
+  new musicItem(
+    "../img/cards/filmost1.jpg",
+    "King Arthur",
+    "Big playlist of Daniel Pemberton music",
+    "https://www.youtube.com/embed/U5hE3GLSnTo?list=PLBKadB95sF46sIN2fmEWPPzlCeRXx-Lio",
+    ".music__tab-filmost",
+    "music__card-filmost"
+  ).render();
+  new musicItem(
+    "../img/cards/filmost2.jpg",
+    "The Gentlemen",
+    "Have i explain anything?",
+    "https://www.youtube.com/embed/Y9-SKDZ7ZJo?list=PLuF78wm0RiGa8_bNy9tXYG6jK7I6c2EUi",
+    ".music__tab-filmost",
+    "music__card-filmost"
+  ).render();
+  new musicItem(
+    "../img/cards/filmost3.jpg",
+    "Walter Mitty",
+    "Great film about travelling ",
+    "https://www.youtube.com/embed/gtWUpKxSlps?list=PLvty5Cpipf2IgL8W6FXT1D1C9piY_1Bi4",
+    ".music__tab-filmost",
+    "music__card-filmost"
+  ).render();
 });
