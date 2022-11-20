@@ -146,14 +146,6 @@ document.addEventListener("DOMContentLoaded", () => {
       this.parent.append(element);
     }
   }
-  new musicItem(
-    "../img/bg/Chillhop-bg.jpg",
-    "ChillHop Raccoon",
-    "My favourite chillhop ever",
-    "https://www.youtube.com/embed/7NOSDKb0HlU",
-    ".music__tab-chillhop",
-    "music__card-chillhop"
-  ).render();
   //! synthwave
   new musicItem(
     "../img/cards/synthwave1.jpg",
@@ -202,5 +194,144 @@ document.addEventListener("DOMContentLoaded", () => {
     "https://www.youtube.com/embed/7FG7nTUYowQ",
     ".music__tab-synthwave",
     "music__card-synthwave"
+  ).render();
+  //! Chillhop
+  new musicItem(
+    "../img/cards/chillhop1.jpg",
+    "ChillHop Raccoon",
+    "My favourite chillhop ever",
+    "https://www.youtube.com/embed/7NOSDKb0HlU",
+    ".music__tab-chillhop",
+    "music__card-chillhop"
+  ).render();
+  new musicItem(
+    "../img/cards/chillhop2.jpg",
+    "LoFi Girl",
+    "Iconic 24/7 stream with our favourite girl",
+    "https://www.youtube.com/embed/jfKfPfyJRdk",
+    ".music__tab-chillhop",
+    "music__card-chillhop"
+  ).render();
+  new musicItem(
+    "../img/cards/chillhop3.jpg",
+    "Spring 2021",
+    "Light chillhop mix for morning coffee",
+    "https://www.youtube.com/embed/lve6KTZTKDw",
+    ".music__tab-chillhop",
+    "music__card-chillhop"
+  ).render();
+  new musicItem(
+    "../img/cards/chillhop4.jpg",
+    "Endless Sunday😌",
+    "Beautiful chillhop mix for sundays",
+    "https://www.youtube.com/embed/D_uLM5i0Z4c",
+    ".music__tab-chillhop",
+    "music__card-chillhop"
+  ).render();
+  new musicItem(
+    "../img/cards/chillhop5.jpg",
+    "Fades To Blue",
+    "Ocean-themed chillhop mix",
+    "https://www.youtube.com/embed/PfgS405CdXk",
+    ".music__tab-chillhop",
+    "music__card-chillhop"
+  ).render();
+  new musicItem(
+    "../img/cards/chillhop6.jpg",
+    "City Escape🌃",
+    "Calm quiet mix for evenings",
+    "https://www.youtube.com/embed/tAzN2FukjnY",
+    ".music__tab-chillhop",
+    "music__card-chillhop"
+  ).render();
+  //! game ost
+  new musicItem(
+    "../img/cards/gameOST1.jpg",
+    "Machinarium",
+    "My favourite game EVER",
+    "https://www.youtube.com/embed/bQavuqgxOf4",
+    ".music__tab-gameost",
+    "music__card-gameost"
+  ).render();
+  new musicItem(
+    "../img/cards/gameOST2.jpg",
+    "Hotline Miami",
+    "Brutal and bloody game",
+    "https://www.youtube.com/embed/adDW9OKbKFs",
+    ".music__tab-gameost",
+    "music__card-gameost"
+  ).render();
+  new musicItem(
+    "../img/cards/gameOST3.jpg",
+    "The Witcher 3",
+    "Atmospheric slavic RPG",
+    "https://www.youtube.com/embed/Lj6oYNyvWuY",
+    ".music__tab-gameost",
+    "music__card-gameost"
+  ).render();
+  new musicItem(
+    "../img/cards/gameOST4.jpg",
+    "Hotline miami 2",
+    "Second part of pixel adrenaline shooter",
+    "https://www.youtube.com/embed/6_uAAzbv4IE",
+    ".music__tab-gameost",
+    "music__card-gameost"
+  ).render();
+  new musicItem(
+    "../img/cards/gameOST5.jpg",
+    "Guacamelee",
+    "VERY mexican-style game",
+    "https://www.youtube.com/embed/9PM_4YUfNcM",
+    ".music__tab-gameost",
+    "music__card-gameost"
+  ).render();
+  //! phonk
+  new musicItem(
+    "../img/cards/phonk1.jpg",
+    "Relaxing mix",
+    "The only mix on this tab, but it is really atmospheric and chill",
+    "https://www.youtube.com/embed/dg8WOoAOpI8",
+    ".music__tab-phonk",
+    "music__card-phonk"
+  ).render();
+  new musicItem(
+    "../img/cards/phonk2.jpg",
+    "Maze - Phonk Wlkr",
+    "Nice calm track",
+    "https://www.youtube.com/embed/qP_eY0rA6r0",
+    ".music__tab-phonk",
+    "music__card-phonk"
+  ).render();
+  new musicItem(
+    "../img/cards/phonk3.jpg",
+    "WRNG - MC Orsen",
+    "Cool rhyme track",
+    "https://www.youtube.com/embed/yT5Nhm2MpZI",
+    ".music__tab-phonk",
+    "music__card-phonk"
+  ).render();
+  new musicItem(
+    "../img/cards/phonk4.jpg",
+    "Best of 2021",
+    "Best phonk of 2021 in one mixtape",
+    "https://www.youtube.com/embed/UVbSF2LTBnQ",
+    ".music__tab-phonk",
+    "music__card-phonk"
+  ).render();
+  new musicItem(
+    "../img/cards/phonk5.jpg",
+    "Venom - DXRTY",
+    "Agressive track for workout",
+    "https://www.youtube.com/embed/Yq0bB76wQUU",
+    ".music__tab-phonk",
+    "music__card-phonk"
+  ).render();
+  new musicItem(
+    "../img/cards/phonk6.jpg",
+    "Prince of darkness",
+    "Agressive track for workout",
+    "https://www.youtube.com/embed/59fzO8BIwDg",
+    ".music__tab-phonk",
+    "music__card-phonk"
   ).render();
 });
