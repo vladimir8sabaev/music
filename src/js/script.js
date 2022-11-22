@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new musicItem(
     "../img/cards/synthwave1.jpg",
     "Gravity",
-    "Synthwave1",
+    "It's like listening to the 80s and the year 2200 at the same time...",
     "https://www.youtube.com/embed/D8gHFd1Slfo",
     ".music__tab-synthwave",
     "music__card-synthwave"
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new musicItem(
     "../img/cards/synthwave2.jpg",
     "Cybercity",
-    "Synthwave2",
+    "RIP to all the people who have not discovered synthwave yet",
     "https://www.youtube.com/embed/dgCnYsDTiXU",
     ".music__tab-synthwave",
     "music__card-synthwave"
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new musicItem(
     "../img/cards/synthwave3.jpg",
     "Nightlapse",
-    "Synthwave3",
+    "It’s like I have nostalgia... for something that never happened",
     "https://www.youtube.com/embed/6TEGPexTqr4",
     ".music__tab-synthwave",
     "music__card-synthwave"
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new musicItem(
     "../img/cards/synthwave4.jpg",
     "Glitch",
-    "Synthwave4",
+    "Listening to this while I program makes me feel like I am creating Tron.",
     "https://www.youtube.com/embed/isIj3tuQTDY",
     ".music__tab-synthwave",
     "music__card-synthwave"
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new musicItem(
     "../img/cards/synthwave5.jpg",
     "Gravity 2.0",
-    "Synthwave5",
+    "Damn, the cosmic vibe... Just fantastic 🔥😍",
     "https://www.youtube.com/embed/CQwDEznMRMk",
     ".music__tab-synthwave",
     "music__card-synthwave"
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new musicItem(
     "../img/cards/synthwave6.jpg",
     "Offworld",
-    "Synthwave6",
+    "Born too late to explore the New World. Born too early to explore the cosmos...",
     "https://www.youtube.com/embed/7FG7nTUYowQ",
     ".music__tab-synthwave",
     "music__card-synthwave"
@@ -358,5 +358,119 @@ document.addEventListener("DOMContentLoaded", () => {
     "https://www.youtube.com/embed/gtWUpKxSlps?list=PLvty5Cpipf2IgL8W6FXT1D1C9piY_1Bi4",
     ".music__tab-filmost",
     "music__card-filmost"
+  ).render();
+  new musicItem(
+    "../img/cards/filmost4.jpg",
+    "The terminal",
+    "Another great film about travelling ",
+    "https://www.youtube.com/embed/n9D4z8VwB2A",
+    ".music__tab-filmost",
+    "music__card-filmost"
+  ).render();
+  new musicItem(
+    "../img/cards/filmost5.jpg",
+    "Interstellar",
+    "Smooth QUALITY loop of the soundtrack",
+    "https://www.youtube.com/embed/j23SO29LNWE",
+    ".music__tab-filmost",
+    "music__card-filmost"
+  ).render();
+  //! trap
+  new musicItem(
+    "../img/cards/trap1.jpg",
+    "Arabic Trap Mix",
+    "One of the best mixes of arabian trap",
+    "https://www.youtube.com/embed/6hefR257KYU",
+    ".music__tab-trap",
+    "music__card-trap"
+  ).render();
+  new musicItem(
+    "../img/cards/trap2.jpg",
+    "Middle East Trap",
+    "The mix between trap and traditional Arabic music",
+    "https://www.youtube.com/embed/pCfqB2nKi7A",
+    ".music__tab-trap",
+    "music__card-trap"
+  ).render();
+  new musicItem(
+    "../img/cards/trap3.jpg",
+    "Mafia Zurna",
+    "Single by Bay Trapist",
+    "https://www.youtube.com/embed/7ggOheMoIdw",
+    ".music__tab-trap",
+    "music__card-trap"
+  ).render();
+  new musicItem(
+    "../img/cards/trap4.jpg",
+    "IZANAGI イザナギ",
+    "Agressive japanese trap",
+    "https://www.youtube.com/embed/eSZFIXbqmhs",
+    ".music__tab-trap",
+    "music__card-trap"
+  ).render();
+  new musicItem(
+    "../img/cards/trap5.jpg",
+    "KAGUTSUCHI",
+    "Agressive japanese trap",
+    "https://www.youtube.com/embed/x1R2yQtErPc",
+    ".music__tab-trap",
+    "music__card-trap"
+  ).render();
+  new musicItem(
+    "../img/cards/trap6.jpg",
+    "YAKSHA 夜叉",
+    "Trapanese Instrumental Hip Hop Mix",
+    "https://www.youtube.com/embed/A7WZhoGRjMI",
+    ".music__tab-trap",
+    "music__card-trap"
+  ).render();
+  //! classic
+  new musicItem(
+    "../img/cards/classic1.jpg",
+    "Summer Presto",
+    "God: How much talent do you want? <br> Vivaldi: yes",
+    "https://www.youtube.com/embed/Nx5c_JZIM6M",
+    ".music__tab-classic",
+    "music__card-classic"
+  ).render();
+  new musicItem(
+    "../img/cards/classic2.jpg",
+    "Sugar Plum Fairy",
+    "His child: dad, can you tell me a fairytale story? <br> Tchaikovsky: plays piano 🧚‍♂️",
+    "https://www.youtube.com/embed/B9zRToy-mwk",
+    ".music__tab-classic",
+    "music__card-classic"
+  ).render();
+  new musicItem(
+    "../img/cards/classic3.jpg",
+    "Gymnopédie",
+    "This is like the Mona Lisa of music. You can't tell what emotion its going for.",
+    "https://www.youtube.com/embed/S-Xm7s9eGxU",
+    ".music__tab-classic",
+    "music__card-classic"
+  ).render();
+  new musicItem(
+    "../img/cards/classic4.jpg",
+    "Fly",
+    "A french movie 'Intouchables' introduced me to Einaudi's pieces and, I'm so glad it did.",
+    "https://www.youtube.com/embed/5LRwYKpV-6A",
+    ".music__tab-classic",
+    "music__card-classic"
+  ).render();
+  new musicItem(
+    "../img/cards/classic5.jpg",
+    "Nuvole Bianche",
+    "I swear I get goosebumps every time this masterpiece play",
+    "https://www.youtube.com/embed/sR2W2scFS4Y",
+    ".music__tab-classic",
+    "music__card-classic"
+  ).render();
+  new musicItem(
+    "../img/cards/classic6.jpg",
+    "Una Mattina",
+    "The piano keys are black and white but they sound like a million colors in your mind 🎹",
+    "https://www.youtube.com/embed/MPlkHxFA-Qg",
+    ".music__tab-classic",
+    "music__card-classic"
   ).render();
 });
